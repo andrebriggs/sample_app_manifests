@@ -185,6 +185,8 @@ spec:
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
+  annotations:
+    sidecar.istio.io/inject: "false"
   labels:
     app: jaeger
     chart: jaeger-0.8.3

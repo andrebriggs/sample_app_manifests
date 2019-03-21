@@ -2977,7 +2977,7 @@ spec:
               name: kiali
         - name: PROMETHEUS_SERVICE_URL
           value: http://prometheus:9090
-        image: docker.io/kiali/kiali:v0.15
+        image: docker.io/kiali/kiali:v0.12
         name: kiali
         resources:
           requests:

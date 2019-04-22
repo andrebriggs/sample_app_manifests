@@ -3,13 +3,15 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: api-deploy-stable
+  name: spring-boot-api-
   labels:
     app: spring-boot-api
+    deploymentSlot: blue
 spec:
   selector:
     matchLabels:
       app: spring-boot-api
+      deploymentSlot: blue
   replicas: 3
   strategy:
     type: RollingUpdate #Parameterize?
@@ -17,6 +19,7 @@ spec:
     metadata:
       labels:
         app: spring-boot-api
+        deploymentSlot: blue
         version: stable
       annotations:
         prometheus.io/path: '/api/actuator/prometheus'

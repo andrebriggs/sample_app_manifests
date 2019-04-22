@@ -53,7 +53,7 @@ spec:
 ---
 apiVersion: v1
 data:
-  admin-password: S3gyR3J3ZXlYbldUVzBUamNrU1VIdDZ1d0JwWGdocXpZa3B1amY2Rw==
+  admin-password: bG9nem5TNTVSYzhOMWZacEFVU0VidkpBT2JMWWRMMWRLaXBxSDJDNg==
   admin-user: YWRtaW4=
   ldap-toml: ""
 kind: Secret
